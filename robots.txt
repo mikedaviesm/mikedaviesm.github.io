@@ -1,0 +1,5 @@
+﻿# robots.txt for dav-ies.co.uk
+
+User-agent: *
+Disallow: /static
+Sitemap: http://www.dav-ies.co.uk/sitemap.xml
