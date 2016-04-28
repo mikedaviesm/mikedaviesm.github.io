@@ -21,12 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="static/dav_ies/assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="static/dav_ies/assets/css/component.css">
 
-	
-    <script src="static/dav_ies/assets/js/jquery.min.js"></script>
-	<script src="static/dav_ies/assets/js/Chart.js"></script>
-	<script src="static/dav_ies/assets/js/modernizr.custom.js"></script>
-	
-	
+
 	
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
@@ -117,19 +112,7 @@
 					<canvas id="canvas" height="130" width="130"></canvas>
 					<label>Bootstrap <br/>(front-end)</label>
 					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 70,
-									color:"#1abc9c"
-								},
-								{
-									value : 30,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
-					</script>
+
 					<br>
 					<br>
 				</div><!-- col-lg-2 -->
@@ -140,19 +123,7 @@
 					<canvas id="canvas1" height="130" width="130"></canvas>
 					<label>C# MVC <br/>(back-end)</label>
 					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 90,
-									color:"#1abc9c"
-								},
-								{
-									value : 10,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
-					</script>
+
 					<br>
 					<br>
 				</div><!-- col-lg-2 -->
@@ -162,19 +133,7 @@
 				<div class="col-lg-2">
 					<canvas id="canvas2" height="130" width="130"></canvas>
 					<label>SQL and Databases<br/>(data)</label>
-					<script>
-						var doughnutData = [
-								{
-									value: 80,
-									color:"#1abc9c"
-								},
-								{
-									value : 40,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
-					</script>
+
 					<br>
 					<br>
 				</div><!-- col-lg-2 -->
@@ -519,6 +478,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
+		
+    <script src="static/dav_ies/assets/js/jquery.min.js"></script>
+	<script src="static/dav_ies/assets/js/Chart.js"></script>
+	<script src="static/dav_ies/assets/js/modernizr.custom.js"></script>
+	
 	
     <script src="static/dav_ies/assets/js/bootstrap.min.js"></script>
     <script src="static/dav_ies/assets/js/retina.js"></script>
@@ -547,10 +511,53 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
+	  
+	  
+	  
     </script>
 	
 	
+						<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#1abc9c"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+					</script>
+	
 	    
-
+					<script>
+						var doughnutData = [
+								{
+									value: 80,
+									color:"#1abc9c"
+								},
+								{
+									value : 40,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					
+										<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#1abc9c"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
+					</script>
     
 </body>
