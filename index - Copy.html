@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        <link rel="shortcut icon" href="static/favicon/favicon.ico">
+
+    <title>Mike Davies - Freelance Business Systems Web Developer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/dav_ies/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/dav_ies/assets/css/main.css" rel="stylesheet">
+    
+	<link rel="stylesheet" type="text/css" href="static/dav_ies/assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="static/dav_ies/assets/css/component.css">
+
+	
+    <script src="static/dav_ies/assets/js/jquery.min.js"></script>
+	<script src="static/dav_ies/assets/js/Chart.js"></script>
+	<script src="static/dav_ies/assets/js/modernizr.custom.js"></script>
+	
+	
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="static/dav_ies/assets/js/html5shiv.js"></script>
+      <script src="static/dav_ies/assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+	
+
+   
+</head>
+
+<body  data-spy="scroll" data-offset="0" data-target="#gn-menu">
+
+
+	<div class="container">
+		<ul id="gn-menu" class="gn-menu-main">
+			<li class="gn-trigger">
+				<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+							<li class="gn-search-item">
+								<input placeholder="Search" type="search" class="gn-search">
+								<a class="gn-icon gn-icon-search"><span>Search</span></a>
+							</li>
+							<li><a href="#home" class="gn-icon gn-icon-home smoothScroll">Home</a></li>
+							<li><a href="#about" class="gn-icon gn-icon-archive smoothScroll">About</a></li>
+							<li><a href="#portfolio" class="gn-icon gn-icon-pictures smoothScroll">Portfolio</a></li>
+							<li><a href="#blog" class="gn-icon gn-icon-article smoothScroll">Experience</a></li>
+							<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contact</a></li>
+
+						</ul>
+					</div><!-- /gn-scroller -->
+				</nav>
+			</li>
+			<li><a href="/" class="smoothScroll">Mike Davies</a></li>
+		</ul>
+	</div><!-- /container -->    
+
+
+
+
+
+
+
+		
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="col-lg-8">
+			<h1>I'm a business systems & web developer, living in Leeds.</h1>
+			</div>
+			<div class="col-lg-4">
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ABOUT SECTION -->
+	<section id="about" name="about"></section>
+	<div class="container about">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h3>About Mike Davies</h3>
+			<h5>FULL-STACK DEVELOPER</h5>
+			<hr>
+			<br>
+			<h4>A full stack web application developer! I help businesses create elegant solutions to complex problems, by delivering slick web applications using the latest bleeding edge software solutions and frameworks.<br/>-</h4>
+			<p>Being passionate about technology and its application for over six years now I have acquired skills in a variety of IT related fields and am a Professional member of the British Computer Society (BCS). have worked with a number of programming languages. At the moment I am developing applications to detect fraud for a finance company using the ASP.NET MVC 4 framework in C#. .</p>
+		</div><!-- /col-lg-6 -->
+	</div><!-- /container -->
+	
+	
+	<!-- BEGIN CHART SECTION -->	
+	<div id="chartwrap">
+	<br>
+	<br>
+		<div class="container centered">
+			<div class="col-lg-3"></div>
+			
+				<!-- FIRST CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas" height="130" width="130"></canvas>
+					<label>Bootstrap <br/>(front-end)</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#1abc9c"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+				
+				
+				<!-- SECOND CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas1" height="130" width="130"></canvas>
+					<label>C# MVC <br/>(back-end)</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#1abc9c"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+				
+				
+				<!-- THIRD CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas2" height="130" width="130"></canvas>
+					<label>SQL and Databases<br/>(data)</label>
+					<script>
+						var doughnutData = [
+								{
+									value: 80,
+									color:"#1abc9c"
+								},
+								{
+									value : 40,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+
+			<div class="col-lg-3"></div>
+		</div><!-- container -->
+	</div><!-- chartwrap -->
+	
+	<section id="portfolio" name="portfolio"></section>
+	<div id="foliowrap">
+		<div class="container">
+			<h3>I Create Cool Stuff</h3>
+			<br>
+			<br>
+			<div class="row">	
+			
+				<div class="col-md-8">
+				
+				<div class="row">
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-6 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="static/dav_ies/assets/img/portfolio/mur.png" alt="">
+							<figcaption>
+								<h5>MEDICINES USE REVIEW</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				
+						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Medicines Use Review</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="static/dav_ies/assets/img/portfolio/mur.png" alt=""></p>
+						          <p>This system was developed for Infohealth, a group of pharmacies in the UK. The system allows pharmacy staff to log reviews about patients to better assess their needs, and requirement for follow up reviews in the future.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-6">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="static/dav_ies/assets/img/portfolio/arc.png" alt="">
+							<figcaption>
+								<h5>UI DESIGN</h5>
+								<a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				
+				
+				
+						<!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Arc Design Construction</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="static/dav_ies/assets/img/portfolio/arc.png" alt=""></p>
+						          <p>This website was for Arc Design Construction, a simple business home page to give them an internet presence.</p>
+						          <p><b><a href="http://arc-design-construction.co.uk/">Visit Site</a></b></p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				
+				
+				
+				
+				
+				</div>
+				
+				<div class="row">
+				
+				<div class="col-md-6 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="static/dav_ies/assets/img/portfolio/orders.png" alt="">
+							<figcaption>
+								<h5>ORDER SYSTEM</h5>
+								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+
+						<!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Infohealth Order Portal</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="static/dav_ies/assets/img/portfolio/orders.png" alt=""></p>
+						          <p>An ordering system which allows a group of pharmacies to order supplies. The system takes the orders, emails the head office and allows for the efficient management of stock. The system streamlined the old fax based process.</p>
+
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-6">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="static/dav_ies/assets/img/portfolio/network.png" alt="">
+							<figcaption>
+								<h5>NETWORK ANALYSIS</h5>
+								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				
+				
+						<!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Fraud Network Analysis</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="static/dav_ies/assets/img/portfolio/network.png" alt=""></p>
+						          <p>A system which takes a companies customers, performs analysis on their details and provides a graphical representation of any social networks that can be derived. The system helps in the detection and deterent of fraud risk.</p>
+
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				</div>
+				
+			</div>
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mikedaviesm" data-widget-id="303993007110242304">Twitter by @mikedaviesm</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+			</div><!-- /row -->
+
+
+		</div><!-- /container -->
+	</div><!-- /foliowrap -->
+	
+	
+	<section id="blog" name="blog"></section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 about">
+				<h3>My Experience</h3>
+				<h5>A BRIEF HISTORY</h5>
+				<br>
+				<br>
+				
+				<!-- ACCORDION -->
+		            <div class="accordion" id="accordion2">
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		                        <date>2011 - 2014</date> <plus> + </plus> International Personal Finance
+		                        </a>
+		                    </div><!-- /accordion-heading -->
+		                    <div id="collapseOne" class="accordion-body collapse in">
+		                    	<br>
+		                        <div class="accordion-inner">
+		                        <h4>Workings as a Loss Prevention Systems Analyst. I'm responsible for the development of information systems related to Health and Safety, Fraud and the wider Loss Prevention team. Working with Microsoft technologies:</h4>
+								<ul>
+									<li>C# MVC 3 - .NET 4</li>
+									<li>SQL Server 2005 / 2008</li>
+									<li>SSIS & SSRS (SQL Server Integration Services and Reporting Services).</li>
+
+								</ul>
+		                        <p>Part of my role includes analysing current systems and business processes; designing, prototyping and deploying new systems in an international company closely working with teams in 8 different countries. This role means I have experience of the whole systems development life cycle SDLC).</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		                        <date>2010</date> <plus> + </plus>  Brilliant Media
+		                        </a>
+		                    </div>
+		                    <div id="collapseTwo" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>After graduating I began working for Brilliant Media; based in Leeds, as a graduate trainee in their technology team. I took this as an opportunity to start learning Python, building applications on the Django framework; and looking into using APIs to automate repetitive tasks.</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		
+		                 <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+		                        <date>2009</date> <plus> + </plus>  Polyseam
+		                        </a>
+		                    </div>
+		                    <div id="collapseThree" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>Polyseam manufacture sealants and adhesives.</p>
+								<p>My final year project involved analysing their vendor managed inventory system, assessing the current requirements and recommending an updated approach, with research to back up any proposal. The solution to this problem is setting up ASP.NET web services to provide access to stock information.</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		                
+		                 <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+		                        <date>2008 - 2009</date> <plus> + </plus>  Mars (Chocolate)
+		                        </a>
+		                    </div>
+		                    <div id="collapseFour" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>IT Placement within the end user technology team; which delivers email and collaboration tools to the wider organisation.</p>
+								<p>My key achievements included website design and project management. I was also responsible for organising and facilitating team meetings, project handovers and research.</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>			
+					</div><!-- Accordion -->
+				</div><!-- /col-lg-6 -->
+
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div id="testimonial">
+		<div class="container">
+			<div class="bs-example">
+				<div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
+					</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<h1>I'm Prince2 Practitioner qualified. I can run structured projects in a controlled manner, integrated with Agile software development techniques.</h1>
+						<br>
+						<h2>Prince2: Practitioner</h2>
+					</div>
+					<div class="item">
+						<h1>I've worked with many programming languages. At the moment I am developing applications using the ASP.NET MVC 4 framework in C#. For freelance projects, I use Python 2.7 and Django.</h1>
+						<br>
+						<h2>BSc (Hons.) Business Computing with Software Development</h2>
+					</div>
+
+				</div>
+			<br>
+			<br>
+			<br>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+	<section id="contact" name="contact"></section>
+	<div id="footerwrap">
+		<div class="container">
+
+			
+			<div class="col-lg-5">
+				<h3>Drop Me A Line</h3>
+
+			</div>
+			
+			<div class="col-lg-7">
+				<h3>Email: <a href="mailto:mike@dav-ies.co.uk?subject=Contact Mike">mike@dav-ies.co.uk</a></h3>
+				<!--<h3>Skype: mikedaviesm</h3>-->
+				<h3>Phone: 07988 765 222</h3>
+			</div>			
+		
+		</div>
+	
+	</div>
+ 	
+	
+    <!-- Javascript
+    ================================================== -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	
+    <script src="static/dav_ies/assets/js/bootstrap.min.js"></script>
+    <script src="static/dav_ies/assets/js/retina.js"></script>
+	<script src="static/dav_ies/assets/js/classie.js"></script>
+    <script type="text/javascript" src="static/dav_ies/assets/js/smoothscroll.js"></script> 
+	<script src="static/dav_ies/assets/js/gnmenu.js"></script>
+	<script>
+		new gnMenu( document.getElementById( 'gn-menu' ) );
+	</script>  
+	<script>
+		$('.carousel').carousel({
+		  interval: 5500
+		  })
+	</script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20078079-1']);
+      _gaq.push(['_setDomainName', 'www.dav-ies.co.uk']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') 
+        + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+	
+	
+	    
+
+    
+</body>
